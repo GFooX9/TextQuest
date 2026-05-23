@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "ru.yuurgu.textquest.app-mergeDebugResources-31:/layout/item_stat_row.xml",
+        "source": "ru.yuurgu.textquest.app-main-34:/layout/item_stat_row.xml"
+    },
+    {
+        "merged": "ru.yuurgu.textquest.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "ru.yuurgu.textquest.app-main-34:/layout/activity_main.xml"
+    }
+]

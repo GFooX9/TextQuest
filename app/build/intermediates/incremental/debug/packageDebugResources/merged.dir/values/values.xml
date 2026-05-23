@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="quest_accent">#4FC3F7</color>
+    <color name="quest_accent_dim">#2A6F8F</color>
+    <color name="quest_background">#0B0F14</color>
+    <color name="quest_danger">#EF5350</color>
+    <color name="quest_panel">#151C26</color>
+    <color name="quest_panel_border">#2A3544</color>
+    <color name="quest_story_bg">#101820</color>
+    <color name="quest_success">#66BB6A</color>
+    <color name="quest_text_primary">#E8EEF4</color>
+    <color name="quest_text_secondary">#9AA8B8</color>
+    <string name="app_name">Текстовый квест</string>
+    <string name="btn_confirm_choice">Подтвердить выбор</string>
+    <string name="label_choices">Действие</string>
+    <string name="label_damage">Урон</string>
+    <string name="label_defense">Защита</string>
+    <string name="label_goal">Цель квеста</string>
+    <string name="label_health">Здоровье</string>
+    <string name="label_magic">Магия</string>
+    <string name="label_story">Ситуация</string>
+    <string name="label_strength">Сила</string>
+    <string name="no_artifacts">Нет артефактов</string>
+    <string name="panel_artifacts">Артефакты</string>
+    <string name="panel_character">Персонаж</string>
+    <string name="placeholder_ranger">Рейнджер</string>
+    <string name="quest_status_active">В процессе</string>
+    <string name="quest_status_complete">Квест выполнен</string>
+    <string name="quest_status_failed">Квест провален</string>
+    <style name="QuestPanelTitle">
+        <item name="android:textColor">@color/quest_accent</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+    <style name="QuestStatLabel">
+        <item name="android:textColor">@color/quest_text_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="QuestStatValue">
+        <item name="android:textColor">@color/quest_text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.TextQuest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/quest_accent</item>
+        <item name="colorPrimaryVariant">@color/quest_accent_dim</item>
+        <item name="colorOnPrimary">@color/quest_background</item>
+        <item name="android:statusBarColor">@color/quest_background</item>
+        <item name="android:navigationBarColor">@color/quest_background</item>
+        <item name="android:windowBackground">@color/quest_background</item>
+    </style>
+</resources>

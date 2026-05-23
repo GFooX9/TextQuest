@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quest_background"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/quest_accent"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="В процессе" />
+
+    <LinearLayout
+        android:id="@+id/statsRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questStatus">
+
+        <LinearLayout
+            android:id="@+id/characterPanel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_panel"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/QuestPanelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_character" />
+
+            <TextView
+                android:id="@+id/characterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/quest_text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Рейнджер Кейн" />
+
+            <include
+                android:id="@+id/rowHealth"
+                layout="@layout/item_stat_row" />
+
+            <include
+                android:id="@+id/rowStrength"
+                layout="@layout/item_stat_row" />
+
+            <include
+                android:id="@+id/rowDamage"
+                layout="@layout/item_stat_row" />
+
+            <include
+                android:id="@+id/rowMagic"
+                layout="@layout/item_stat_row" />
+
+            <include
+                android:id="@+id/rowDefense"
+                layout="@layout/item_stat_row" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/artifactsPanel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="180dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_panel"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/QuestPanelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_artifacts" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/artifactsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/quest_text_secondary"
+                    android:textSize="12sp"
+                    tools:text="Взломщик сейфов (+3 магия)\nПлазменный резак (+2 урон)" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/goalLabel"
+        style="@style/QuestPanelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statsRow" />
+
+    <TextView
+        android:id="@+id/goalText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_panel"
+        android:padding="10dp"
+        android:textColor="@color/quest_success"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goalLabel"
+        tools:text="Ограбить малокский банк и добыть бриллиант Софиты" />
+
+    <TextView
+        android:id="@+id/storyLabel"
+        style="@style/QuestPanelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_story"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goalText" />
+
+    <ScrollView
+        android:id="@+id/storyScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_story"
+        android:fillViewport="true"
+        android:padding="12dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/choicesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/storyLabel"
+        app:layout_constraintVertical_bias="0">
+
+        <TextView
+            android:id="@+id/storyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/quest_text_primary"
+            android:textSize="14sp"
+            tools:text="Вы стоите у входа в банк. Охрана дремлет, но сейф за энергетическим полем." />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/choicesLabel"
+        style="@style/QuestPanelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/label_choices"
+        app:layout_constraintBottom_toTopOf="@id/choicesScroll"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/choicesScroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_panel"
+        android:maxHeight="140dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btnConfirmChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioGroup
+            android:id="@+id/choicesGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirmChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_confirm_choice"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/quest_accent_dim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

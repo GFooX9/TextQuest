@@ -1,0 +1,4 @@
+ru.yuurgu.textquest.test.app-androidTest-0 C:\Users\AlexanderDobler\Desktop\TextQuest\TextQuest\app\build\generated\res\resValues\androidTest\debug
+ru.yuurgu.textquest.test.app-mergeDebugAndroidTestResources-1 C:\Users\AlexanderDobler\Desktop\TextQuest\TextQuest\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+ru.yuurgu.textquest.test.app-mergeDebugAndroidTestResources-2 C:\Users\AlexanderDobler\Desktop\TextQuest\TextQuest\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+ru.yuurgu.textquest.test.app-debugAndroidTest-3 C:\Users\AlexanderDobler\Desktop\TextQuest\TextQuest\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

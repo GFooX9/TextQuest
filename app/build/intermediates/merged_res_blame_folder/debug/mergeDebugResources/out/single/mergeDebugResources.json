@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "ru.yuurgu.textquest.app-debug-32:/drawable_bg_story.xml.flat",
+        "source": "ru.yuurgu.textquest.app-main-34:/drawable/bg_story.xml"
+    },
+    {
+        "merged": "ru.yuurgu.textquest.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "ru.yuurgu.textquest.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "ru.yuurgu.textquest.app-debug-32:/drawable_ic_launcher.xml.flat",
+        "source": "ru.yuurgu.textquest.app-main-34:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "ru.yuurgu.textquest.app-debug-32:/layout_item_stat_row.xml.flat",
+        "source": "ru.yuurgu.textquest.app-main-34:/layout/item_stat_row.xml"
+    },
+    {
+        "merged": "ru.yuurgu.textquest.app-debug-32:/drawable_bg_panel.xml.flat",
+        "source": "ru.yuurgu.textquest.app-main-34:/drawable/bg_panel.xml"
+    }
+]
