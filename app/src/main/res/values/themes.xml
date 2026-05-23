@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TextQuest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/quest_accent</item>
+        <item name="colorPrimaryVariant">@color/quest_accent_dim</item>
+        <item name="colorOnPrimary">@color/quest_background</item>
+        <item name="android:statusBarColor">@color/quest_background</item>
+        <item name="android:navigationBarColor">@color/quest_background</item>
+        <item name="android:windowBackground">@color/quest_background</item>
+    </style>
+
+    <style name="QuestPanelTitle">
+        <item name="android:textColor">@color/quest_accent</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <style name="QuestStatLabel">
+        <item name="android:textColor">@color/quest_text_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="QuestStatValue">
+        <item name="android:textColor">@color/quest_text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
